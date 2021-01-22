@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 121.199.57.24:8848
+      config:
+        server-addr: 121.199.57.24:8848
+        prefix: security
+        file-extension: yaml
+  profiles:
+    active: dev
+

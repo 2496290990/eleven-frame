@@ -34,6 +34,7 @@
         <json.version>20170516</json.version>
         <cloud-alibaba.version>0.2.2.RELEASE</cloud-alibaba.version>
         <hutool.version>5.3.7</hutool.version>
+        <nacos-version>2.2.3.RELEASE</nacos-version>
     </properties>
 
     <dependencyManagement>
@@ -53,6 +54,16 @@
                 <version>${cloud-alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+                <version>${nacos-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+                <version>${nacos-version}</version>
             </dependency>
             <!--mybatis-plus 持久层-->
             <dependency>
